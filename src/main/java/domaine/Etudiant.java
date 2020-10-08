@@ -14,14 +14,12 @@ public class Etudiant extends Personne {
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Cours cours;
 	
-	
 
 	public Etudiant(String first_name, String last_name, String mail, String address, String phone, Date dob) {
 		super(first_name, last_name, mail, address, phone, dob);
 	}
 
-	public Etudiant(String first_name, String last_name, String mail, String address, String phone, Date dob,
-			Cours cours) {
+	public Etudiant(String first_name, String last_name, String mail, String address, String phone, Date dob, Cours cours) {
 		super(first_name, last_name, mail, address, phone, dob);
 		this.cours = cours;
 	}

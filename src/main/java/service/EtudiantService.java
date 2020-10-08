@@ -2,7 +2,6 @@ package service;
 
 import dao.EtudiantDao;
 import domaine.Etudiant;
-import domaine.Personne;
 
 public class EtudiantService {
 	
@@ -10,5 +9,17 @@ public class EtudiantService {
 	
 	public void createEtudiant(Etudiant etudiant) {
 		etudiantDao.createEtudiant(etudiant);
+	}
+	
+	public Etudiant getEtudiant(Long id) {
+		return etudiantDao.getEtudiant(id);
+	}
+	
+	public void updateEtudiant(Etudiant etudiant, Etudiant nEtudiant) {
+		etudiantDao.updateEtudiant(etudiant, nEtudiant);
+	}
+	
+	public void deleteEtudiant(Long id) {
+		etudiantDao.deleteEtudiant(id);
 	}
 }

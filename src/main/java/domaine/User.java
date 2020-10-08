@@ -18,7 +18,7 @@ public class User extends Personne{
 		super(first_name, last_name, mail, address, phone, dob);
 	}
 
-	public User(Long id, String first_name, String last_name, String mail, String address, String phone, Date dob,
+	public User(String first_name, String last_name, String mail, String address, String phone, Date dob,
 			String login, String password, String profil) {
 		super(first_name, last_name, mail, address, phone, dob);
 		this.login = login;
